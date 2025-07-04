@@ -1,0 +1,73 @@
+.weatherCont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title{
+    padding: 1rem 0;
+}
+
+.minmax{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: inherit;
+}
+
+.togglers{
+    width: inherit;
+    height: 3rem;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+}
+
+.button{
+    height: inherit;
+    width: 5rem;
+    border: none;
+    background-color: #4facfe;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.buttona{
+    height: inherit;
+    width: 10rem;
+    font-weight: bold;
+    border: none;
+    background-color: #4facfe;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .weatherCont {
+      gap: 1.5rem;
+      padding: 0.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+  
+    .togglers {
+      height: 2.5rem;
+      border-radius: 4px;
+    }
+  
+    .button,
+    .buttona {
+      width: auto;
+      padding: 0 0.8rem;
+      font-size: 0.9rem;
+      min-width: 40px;
+    }
+  }

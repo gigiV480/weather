@@ -1,0 +1,46 @@
+.container{
+    margin: 0 15%;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    height: calc(100vh - 5.5rem);
+}
+
+.day{
+    width: 20%;
+    border-right: 1px solid black;
+}
+
+.display{
+    width: 65%;
+}
+
+.converter{
+    border-left: 1px solid black;
+    width: 15%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      margin: 0 5%;
+      flex-direction: column;
+      height: auto;
+      min-height: calc(100vh - 5.5rem);
+    }
+  
+    .day,
+    .display,
+    .converter {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+  
+    .day {
+      border-bottom: 1px solid black;
+    }
+  
+    .converter {
+      border-bottom: none;
+    }
+  }
